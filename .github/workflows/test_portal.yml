@@ -16,4 +16,4 @@ jobs:
   write-to-console:
     runs-on: windows-latest
     steps:
-      - run: echo %PORTAL_URL% && echo %PORTAL_PASSWORD%
+      - run: echo ${{secrets.PORTAL_URL}} && echo ${{secrets.PORTAL_PASSWORD}}
